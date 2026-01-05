@@ -1,0 +1,71 @@
+package co.istad.jdbc.model;
+
+import java.math.BigDecimal;
+
+public class Product {
+
+    private Integer id ;
+    private String code ;
+    private String name ;
+    private BigDecimal price ;
+    private Integer qty ;
+    private Boolean isDeleted ;
+
+    public Product(){}
+
+    public Product(String code, String name, BigDecimal price, Integer qty, Boolean isDeleted) {
+        this.code = code;
+        this.name = name;
+        this.price = price;
+        this.qty = qty;
+        this.isDeleted = isDeleted;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public void setQty(Integer qty) {
+        this.qty = qty;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public Integer getQty() {
+        return qty;
+    }
+
+    public Boolean getDeleted() {
+        return isDeleted;
+    }
+}
