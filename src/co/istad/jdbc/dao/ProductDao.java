@@ -11,12 +11,12 @@ public interface  ProductDao {
 
     int delete(String code);
 
-/*
-* INsert a new record into DB
-* New data is product
-* @return affected row number
- */
- int insert(Product product);
+   /*
+   * INsert a new record into DB
+   * New data is product
+   * @return affected row number
+   */
+   int insert(Product product);
 
 
 
