@@ -14,7 +14,9 @@ public class DbConfig {
 
 
     public static Connection getInstance() {
+
         return conn;
+
     }
 
 
@@ -73,9 +75,6 @@ public class DbConfig {
             System.out.println("Connection already initialize");
 
         }
-
-
-
 
 
     }

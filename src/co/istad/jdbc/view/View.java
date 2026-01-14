@@ -12,13 +12,14 @@ public class View {
 
 
     public static void printAppMenu() {
+
         System.out.println("Welcome to JDBC System");
         System.out.println("--------------");
         System.out.println("""
-                1. List Articles
-                2. Add Article
-                3. Update Article
-                4. Delete Article
+                1. List Product
+                2. Add Product
+                3. Update Product
+                4. Delete Product
                 0. Exit
                 """);
     }
@@ -27,12 +28,9 @@ public class View {
         System.out.println(prefix + " successfully");
     }
 
-    public static void print(String text, boolean isNewLine) {
-        if (isNewLine) {
+    public static void print(String text) {
+
             System.out.println(text);
-        } else {
-            System.out.print(text);
-        }
     }
 
     public static void table(List<Product> products) {
@@ -55,6 +53,6 @@ public class View {
             table.addCell(p.getDeleted().toString());
         }
 
-        View.print(table.render(), true);
+        View.print(table.render());
     }
 }
